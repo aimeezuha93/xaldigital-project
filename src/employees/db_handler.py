@@ -1,4 +1,5 @@
 import os
+import logging
 from sqlalchemy import create_engine, text
 
 
@@ -50,7 +51,7 @@ class DbOperations:
             try:
                 conn.execute(text(query))
             except Exception as e:
-                print(f"Postgres Error: {e}")
+                logging.error(f"Postgres Error: {e}")
             finally:
                 conn.close()
 
@@ -64,7 +65,7 @@ class DbOperations:
                 r = conn.execute(text(query)).fetchall()
                 return r
             except Exception as e:
-                print(f"Postgres Error: {e}")
+                logging.error(f"Postgres Error: {e}")
             finally:
                 conn.close()
 
@@ -78,7 +79,7 @@ class DbOperations:
             try:
                 conn.execute(text(query))
             except Exception as e:
-                print(f"Postgres Error: {e}")
+                logging.error(f"Postgres Error: {e}")
             finally:
                 conn.close()
 
@@ -91,6 +92,6 @@ class DbOperations:
             try:
                 conn.execute(text(query))
             except Exception as e:
-                print(f"Postgres Error: {e}")
+                logging.error(f"Postgres Error: {e}")
             finally:
                 conn.close()
