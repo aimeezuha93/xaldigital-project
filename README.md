@@ -7,7 +7,7 @@ Please noted that this is the first time I have developed an API because I have 
 > Note:
 Things I decided not to focus on
 >- ER design: Because it is indicated that various data sample files would be attached to be able to design and build the data models, with the only file that was attached it cannot be done.
->- Implement CI/CD.
+>- Implement CI/CD: Only flake8 rules are validated.
 >- Implement a mechanism to create or update the schema.
 
 ## Steps
