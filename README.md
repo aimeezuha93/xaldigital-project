@@ -225,3 +225,13 @@ DELETE http://127.0.0.1:3001/employees/elly_morocco@gmail.com
     }
 }
 ```
+
+### Tests
+
+You can find the test for each method at `/test/test_employees_handler``
+
+Execute them with:
+
+```PYTHON
+pytest tests/test_employees_handler.py
+```
